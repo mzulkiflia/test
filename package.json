@@ -12,7 +12,8 @@
   "dependencies": {
     "@line/bot-sdk": "^6.1.0",
     "axios": "^0.18.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "linebot": "^1.4.1"
   },
   "engines": {
     "node": "8.x"

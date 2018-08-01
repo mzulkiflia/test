@@ -2,6 +2,7 @@ dependencies:
   '@line/bot-sdk': 6.1.0
   axios: 0.18.0
   express: 4.16.3
+  linebot: 1.4.1
 packages:
   /@line/bot-sdk/6.1.0:
     dependencies:
@@ -170,6 +171,12 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
+  /encoding/0.1.12:
+    dependencies:
+      iconv-lite: 0.4.23
+    dev: false
+    resolution:
+      integrity: sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
   /escape-html/1.0.3:
     dev: false
     resolution:
@@ -307,6 +314,20 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+  /is-stream/1.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+  /linebot/1.4.1:
+    dependencies:
+      body-parser: 1.18.3
+      debug: 3.1.0
+      node-fetch: 1.7.3
+    dev: false
+    resolution:
+      integrity: sha1-O5DgHEAniFGlffVpPA/fRVEAGuM=
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -366,6 +387,13 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
+  /node-fetch/1.7.3:
+    dependencies:
+      encoding: 0.1.12
+      is-stream: 1.1.0
+    dev: false
+    resolution:
+      integrity: sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
   /on-finished/2.3.0:
     dependencies:
       ee-first: 1.1.1
@@ -526,3 +554,4 @@ specifiers:
   '@line/bot-sdk': ^6.1.0
   axios: ^0.18.0
   express: ^4.16.3
+  linebot: ^1.4.1
