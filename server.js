@@ -32,6 +32,65 @@ function handleEvent(event) {
       return client.replyMessage(event.replyToken, echo);
     }
     if(event.message.text === "/book"){
+      const echo =  {
+        "type": "flex",
+      "altText": "Silahkan pilih menu.",
+      "contents": {
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/678448099933597698/eACo_0u3_400x400.jpg",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "TRAVEL",
+          "text": "/travel"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "RENT-CAR",
+          "text": "/rent"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "DROP",
+          "text": "/drop"
+        }
+      },
+      {
+        "type": "spacer",
+        "size": "sm"
+      }
+    ],
+    "flex": 0
+  }
+}
+      }
+      return client.replyMessage(event.replyToken, echo);
+}
+  if(event.message.text === "/travel"){
       const echo =  {  
       "type": "flex",
       "altText": "Silahkan pilih menu.",
