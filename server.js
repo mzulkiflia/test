@@ -27,7 +27,7 @@ function handleEvent(event) {
       const echo = { type: 'text', text: "Selamat Datang di Official Line Tabook Indonesia!" };
       return client.replyMessage(event.replyToken, echo);
     }
-    if(event.message.text === "/menu"){
+    if(event.message.text === "/keyword"){
       const echo = { type: 'text', text: "Silahkan ketikkan menu di bawah ini: \n\n- /book  = untuk memesan travel anda\n\n- /event = untuk mengetahui info-info menarik dari Tabook \n\n- /about = untuk penjelesan lebih lanjut mengenai tabook \n\n\n atau dengan memilih menu yang ada di kiri chatbox" };
       return client.replyMessage(event.replyToken, echo);
     }
@@ -124,7 +124,7 @@ function handleEvent(event) {
             "contents": [
               {
                 "type": "text",
-                "text": "Rp. 79.000,-",
+                "text": "Rp. 72.000,-",
                 "wrap": true,
                 "weight": "bold",
                 "size": "md",
